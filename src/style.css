@@ -2,7 +2,9 @@ body {
   background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
 }
-
+form {
+  display: flex;
+}
 header {
   border-bottom: 1px solid #f9f7fe;
   padding: 30px;
@@ -38,9 +40,8 @@ main {
   border: none;
   border-radius: 6px;
   width: 80%;
-  padding: 15px 20px;
   font-size: 16px;
-  display: flex;
+  padding: 15px 20px;
 }
 
 .search-form-button {
