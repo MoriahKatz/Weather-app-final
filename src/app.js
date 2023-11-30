@@ -49,7 +49,41 @@ function handleSubmit(event) {
   let searchInput = document.querySelector("#search-form-input");
   searchCity(searchInput.value);
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+  <div class="weather-forecast">
+    <div class="row">
+      <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <img
+          src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+          alt="weather icon"
+          width="42"
+        />
+        <br />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max">18°</span>
+          <span class="weather-forecast-temperature-min">12°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSubmit);
 
 searchCity("Benin");
+displayForecast();

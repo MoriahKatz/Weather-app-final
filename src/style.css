@@ -102,6 +102,8 @@ main {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  padding: 25px;
+  display: flex;
 }
 
 .weather-forecast-date {
