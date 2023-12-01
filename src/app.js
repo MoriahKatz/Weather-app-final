@@ -60,8 +60,7 @@ function displayForecast() {
     forecastHtml =
       forecastHtml +
       `
-  <div class="weather-forecast">
-    <div class="row">
+
       <div class="col-2">
         <div class="weather-forecast-date">${day}</div>
         <img
@@ -75,8 +74,6 @@ function displayForecast() {
           <span class="weather-forecast-temperature-min">12°</span>
         </div>
       </div>
-    </div>
-  </div>
 `;
   });
   forecastElement.innerHTML = forecastHtml;
