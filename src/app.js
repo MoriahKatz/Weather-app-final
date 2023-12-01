@@ -106,4 +106,3 @@ searchFormElement.addEventListener("submit", handleSubmit);
 
 searchCity("Benin");
 getForecast("Benin");
-displayForecast();
