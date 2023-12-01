@@ -124,3 +124,7 @@ main {
   color: #f65282;
   margin-top: 10px;
 }
+
+.col-2 {
+  display: center;
+}
